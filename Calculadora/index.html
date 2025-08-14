@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculadora </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+
+            <div class="calculadora"> 
+                <div class= "display">
+                    <p id="operacao"></p>
+                </div>
+
+                <div class= "botoes">
+                    <div class = "linha">
+                        <button class = "limpar" onbutton="" id="AC">AC</button>
+                        <button class ="parametro" onbutton="" id="parenteses">( )</button>
+                        <button class ="parametro" onbutton="" id="porcentagem">%</button>
+                        <button class ="parametro" onbutton="" id="dividir">÷</button>
+                    </div> 
+                    <div class ="linha">
+                        <button class = "botao" id="sete" onclick="inserir('7')">7</button>
+                        <button class = "botao" onbutton="" id="oito">8</button>
+                        <button class = "botao" onbutton="" id="nove">9</button>
+                        <button class = "parametro" onbutton="" id="multiplicar">X</button>
+                    </div> 
+                   <div class = "linha">
+                        <button class = "botao" onbutton="" id="quatro">4</button>
+                        <button class = "botao" onbutton="" id="cinco">5</button>
+                        <button class = "botao" onbutton="" id="seis">6</button>
+                        <button class = "parametro" onbutton="" id="subtrair" onclick="inserir(' - ')">-</button>
+                    </div> 
+                   <div class = "linha">
+                        <button class = "botao" onbutton="" id="um">1</button>
+                        <button class = "botao" onbutton="" id="dois">2</button>
+                        <button class = "botao" onbutton="" id="tres">3</button>
+                        <button class = "parametro" onbutton="" id="adicionar">+</button>
+                    </div> 
+                   <div class = "linha">
+                        <button class = "botao" onbutton="" id="zero">0</button>
+                        <button class = "botao" onbutton="" id="virgula">,</button>
+                        <button class = "botao" onbutton="" id="excluir">C</button>
+                        <button class = "resultado" onbutton="" id="resultado">=</button>
+                    </div> 
+                </div>
+
+                
+            </div>
+            <script src="script.js"></script>
+    </body>
+</html>
