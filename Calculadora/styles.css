@@ -1,0 +1,96 @@
+.calculadora {
+    width: 500px;
+    height: 700px;
+    background: rgb(216, 216, 216);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    outline-style: solid;
+    box-shadow: 5px 5px 15px;
+    
+}
+
+
+
+body {
+    background-color: rgb(86, 255, 123);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : auto;
+    margin-top: 100px;
+}
+
+.display{
+    background: #ffffff;
+    width: 460px;
+    height:100px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: right;
+    font-size: 50px;
+
+
+}
+
+.botoes{
+  border: px solid black;
+  padding: 25px;
+  font-size: 30px;
+  text-align: center;
+;
+
+}
+
+.botao{
+    background-color: rgb(253, 253, 253);
+    font: bold 25pt Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    margin-top: 20px;
+    height: 90px;
+    width: 100px;
+}
+
+button:hover {
+  background-color: rgb(154, 156, 155);
+}
+
+button:active{
+    background-color: rgb(180, 180, 180);
+}
+
+
+.parametro{
+    background-color: rgb(220, 255, 181);
+     font: bold 25pt Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100px;
+    height: 90px;
+}
+
+.limpar{
+    background-color: rgb(1, 243, 150);
+    font: bold 25pt Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100px;
+    height: 90px;
+}
+
+.resultado{
+    background-color: rgb(132, 255, 16);
+    font: bold 25pt Arial;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100px;
+    height: 90px;
+}
