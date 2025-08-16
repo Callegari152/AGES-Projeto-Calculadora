@@ -22,5 +22,5 @@ function parenteses(){
 }
 
 function resultado(){
-
+    operacao.innerHTML = eval(operacao.innerHTML)
 }
