@@ -1,93 +1,139 @@
 .calculadora {
-    width: 500px;
-    height: 700px;
-    background: rgb(216, 216, 216);
-    border-style: solid;
-    border-width: 2px;
+    width: 60vw;
+    max-width: 500px;
+    height: 75vh;
+    background: rgb(41, 41, 41);
     border-radius: 30px;
     outline-style: solid;
     box-shadow: 5px 5px 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
 }
 
 
 
 body {
-    background-color: rgb(86, 255, 123);
+    background-color: rgb(155, 248, 155);
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin : auto;
-    margin-top: 100px;
+    padding: 0;
+    margin: 0;
 }
 
 .display{
-    background: #ffffff;
-    width: 460px;
-    height:100px;
-    border-style: solid;
-    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 30px;
+    background: #686767;
+    width: 90vw;
+    max-width: 460px;
+    height:10vh;
+    border: solid;
+    border-color: #686767;
     border-radius: 25px;
-    margin: auto;
     margin-top: 20px;
+    color: white;
+}
 
+.display p {
+    margin: 0;
+    height: 50%;
+    margin-right: 10px;
 }
 
 .botoes{
-  border: px solid black;
-  padding: 25px;
-  font-size: 30px;
-  text-align: center;
-;
-
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
 }
-
+    
 .botao{
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(175, 175, 175);
+    color: white;
     font: bold 25pt Arial;
     border-style: solid;
     border-width: 2px;
-    border-radius: 15px;
+    border-radius: 40px;
     margin-top: 20px;
-    height: 90px;
-    width: 100px;
+    height: 30vh;
+    max-height: 90px;
+    width: 30vw;
+    max-width: 100px;
 }
 
 button:hover {
-  background-color: rgb(154, 156, 155);
+    background-color: rgb(206, 206, 206);
+    color: black;
 }
 
 button:active{
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(85, 85, 85);
+    color: black;
 }
 
 
 .parametro{
-    background-color: rgb(220, 255, 181);
-     font: bold 25pt Arial;
+    background-color: rgb(124, 180, 60);
+     color: white;
+    font: bold 25pt Arial;
     border-style: solid;
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 100px;
     height: 90px;
 }
 
 .limpar{
     background-color: rgb(1, 243, 150);
+     color: white;
     font: bold 25pt Arial;
     border-style: solid;
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 100px;
     height: 90px;
 }
 
 .resultado{
     background-color: rgb(132, 255, 16);
+     color: white;
     font: bold 25pt Arial;
     border-style: solid;
     border-width: 2px;
-    border-radius: 10px;
+    border-radius: 40px;
     width: 100px;
     height: 90px;
+}
+
+@media (max-width: 800px) {
+    .botao {
+        height: 45px;
+        width: 50px;
+    }
+    .limpar {
+        height: 45px;
+        width: 50px;
+    }
+    .parametro {
+        height: 45px;
+        width: 50px;
+    }
+    .resultado {
+        height: 45px;
+        width: 50px;
+    }
+    .display {
+        height: 5vh;
+        width: 50vw;
+    }
+
+
+    
+    
 }
