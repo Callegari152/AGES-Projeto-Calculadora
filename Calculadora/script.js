@@ -3,7 +3,7 @@ const operacaoP = document.getElementById("operacaoP")
 
 function inserir(numero){
     if (operacao.innerHTML[operacao.innerHTML.length - 1] == " "){
-        if(numero == " + " || numero == " - " || numero == " * " || numero == " / "){
+        if(numero == " + " || numero == " - " || numero == " * " || numero == " / " || numero == " , "){
             operacao.innerHTML = operacao.innerHTML.substring(0, operacao.innerHTML.length - 3)
             operacao.innerHTML += numero;
             console.log(numero)
@@ -14,6 +14,7 @@ function inserir(numero){
         operacao.innerHTML += numero
         console.log(operacao.innerHTML[operacao.innerHTML.length - 1])
     }
+
 }
 
 function limparP(){

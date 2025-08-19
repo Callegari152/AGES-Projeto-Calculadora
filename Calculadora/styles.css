@@ -29,16 +29,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: end;
-    font-size: 30px;
+    font-size: 45px;
     background: #686767;
-    width: 90vw;
-    max-width: 460px;
-    height:10vh;
-    border: solid;
-    border-color: #686767;
+    
+    width: 55vw;
+    height: 30vh;
+    max-width: 450px;
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top: 25px;
     color: white;
+    overflow: hidden;
+
 }
 
 .display p {
@@ -48,11 +49,11 @@ body {
 }
 
 .botoes{
-    padding: 25px;
+    padding: 15px;
     font-size: 30px;
     text-align: center;
 }
-    
+
 .botao{
     background-color: rgb(175, 175, 175);
     color: white;
@@ -67,6 +68,50 @@ body {
     max-width: 100px;
 }
 
+#limparT{
+    background-color: rgb(38, 121, 0);
+    margin-top: 10px;
+}
+
+#resultado{
+    background-color: rgb(60, 255, 0);
+}
+
+#adicionar{
+    background-color: rgb(118, 223, 97);
+}
+
+#subtrair{
+    background-color: rgb(118, 223, 97);
+}
+
+#dividir{
+    background-color: rgb(118, 223, 97);
+    margin-top: 10px;
+}
+
+#multiplicar{
+    background-color: rgb(118, 223, 97);
+}
+
+#parenteses{
+    background-color: rgb(118, 223, 97);
+    margin-top: 10px;
+}
+
+#porcentagem{
+    background-color: rgb(118, 223, 97);
+    margin-top: 10px;
+}
+
+#operacaoP{
+    color: rgb(58, 58, 58);
+    font-size: 20px;
+    margin-top: 10px;
+}
+    
+
+
 button:hover {
     background-color: rgb(206, 206, 206);
     color: black;
@@ -78,59 +123,32 @@ button:active{
 }
 
 
-.parametro{
-    background-color: rgb(124, 180, 60);
-     color: white;
-    font: bold 25pt Arial;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 40px;
-    width: 100px;
-    height: 90px;
-}
 
-.limpar{
-    background-color: rgb(1, 243, 150);
-     color: white;
-    font: bold 25pt Arial;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 40px;
-    width: 100px;
-    height: 90px;
-}
-
-.resultado{
-    background-color: rgb(132, 255, 16);
-     color: white;
-    font: bold 25pt Arial;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 40px;
-    width: 100px;
-    height: 90px;
-}
 
 @media (max-width: 800px) {
+    .calculadora{
+        width: 50vw;
+        height: 60vh;
+    }
     .botao {
-        height: 45px;
-        width: 50px;
+        height: 7vh;
+        width: 10vw;
     }
-    .limpar {
-        height: 45px;
-        width: 50px;
-    }
-    .parametro {
-        height: 45px;
-        width: 50px;
-    }
-    .resultado {
-        height: 45px;
-        width: 50px;
+
+    .botoes{
+        width: 75vw;
+        height: 60vh;
+        font: bold 15pt Arial;
     }
     .display {
-        height: 5vh;
-        width: 50vw;
+        height: 10vh;
+        width: 45vw;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 25px;
+
+        
     }
 
 
