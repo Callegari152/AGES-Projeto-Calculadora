@@ -3,16 +3,26 @@ const operacaoP = document.getElementById("operacaoP")
 
 function inserir(numero){
     if (operacao.innerHTML[operacao.innerHTML.length - 1] == " "){
-        if(numero == " + " || numero == " - " || numero == " * " || numero == " / " || numero == " , "){
+        if(numero == " + " || numero == " - " || numero == " * " || numero == " / " ){
             operacao.innerHTML = operacao.innerHTML.substring(0, operacao.innerHTML.length - 3)
             operacao.innerHTML += numero;
-            console.log(numero)
+                  
+        } else {
+            operacao.innerHTML += numero;
+            
+        }
+    } else if(operacao.innerHTML[operacao.innerHTML.length - 1] == ',') {
+        if(numero == ','){
+            operacao.innerHTML = operacao.innerHTML.substring(0, operacao.innerHTML.length - 1)
+            operacao.innerHTML += numero;
+            
         } else {
             operacao.innerHTML += numero;
         }
     } else {
         operacao.innerHTML += numero
-        console.log(operacao.innerHTML[operacao.innerHTML.length - 1])
+        
+
     }
 
 }
@@ -31,17 +41,20 @@ function limparT(){
 }
 
 function parenteses(){
-    if(operacao.innerHTML.includes('(')){
-        operacao.innerHTML = operacao.innerHTML + ")"
+    if(operacao.innerHTML.lastIndexOf('(') > operacao.innerHTML.lastIndexOf(')')){
+        operacao.innerHTML += ")"
     } else {
-        operacao.innerHTML = operacao.innerHTML + "("
+        operacao.innerHTML += "("
     }
 }
 
 
 function resultado(){
     operacaoP.innerHTML = operacao.innerHTML;
-    operacao.innerHTML = operacao.innerHTML.replace('%', '/100').replace("," , ".");    
-    operacao.innerHTML = Number(eval(operacao.innerHTML)).toString().replace("." , ",");
+    console.log(operacao.innerHTML)
+    operacao.innerHTML = operacao.innerHTML.replace('%', '/100').replaceAll("," , ".");    
+    console.log(operacao.innerHTML)
+    operacao.innerHTML = Number(eval(operacao.innerHTML)).toString().replace(".", ",");
+    console.log(operacao.innerHTML)
 }
 
